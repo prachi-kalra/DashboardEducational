@@ -1,0 +1,270 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- for bootstrap icons ! -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="page.css">
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+          <!-- offcanvas trigger -->
+          <button class="btn btn-primary navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+         <!-- take the button that was a part of the offcanvas code and added class
+        navbar-toggle to it ,so that it becomes visible only on small screens and added 
+      span element to it to give hamberg icon look ! -->
+          <a class="navbar-brand fw-bold me-auto" href="#"><span><i class="fa-solid fa-hands-holding-circle" style="color: #ead6f0;"></i></span>&ensp;One For All </a>
+          <!-- me-auto shift to the left and ms-auto shifts to the right -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+           
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    
+            <form class="d-flex ms-auto">
+                <div class="input-group my-3 my-lg-0">
+                  
+                  <!-- my-3 fixes maegin-end ..will give spacing btw input nad search icon 
+                  and on large screens we want it to be zero -->
+                    <input type="text" class="form-control" placeholder="Find Courses...." aria-label="Recipient's username" aria-describedby="basic-addon2">
+                    <span class="input-group-text" id="basic-addon2"><i class="bi bi-search"></i></span>
+                  </div>
+            </form>
+           
+            
+          </div>
+        </div>
+      </nav>
+ <!-- offcanvas -->
+ <!-- but we want offcanvas to be visible on large screens and hidden on small screens -->
+ 
+
+<div class="offcanvas offcanvas-start bg-dark text-white sidebar-nav" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+ 
+  <div class="offcanvas-body p-0">
+   <nav class="navbar-dark">
+   <ul class="navbar-nav">
+    <li>
+      <br>
+      <div class="text-muted small fw-bold px-3">CORE</div>
+    </li>
+    <li>
+      <a href="page.html" class="nav-link px-3 active">
+        <!-- to make it look white like an active link add active class -->
+        <span class="me-2"><i class="bi bi-speedometer2"></i></span>
+        <span>Dashboard</span>
+      </a>
+    </li>
+    <li >
+       <hr class="dropdown-divider"/>
+    </li>
+    <li>
+      <div class="text-muted small fw-bold text-uppercase px-3">INTERFACE</div>
+    </li>
+    <!-- <li>
+      <a class="nav-link active px-3 sidebar-link" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+       <span class="me-2"> <i class="bi bi-people-fill"></i></span>
+       <span>Know More About us</span><span class="right-icon ms-auto"><i class="bi bi-chevron-double-down "></i></span>
+        to indicate a down arrow used chevron-down -->
+      <!-- </a> -->
+      <!-- we wanted collapse to happen  -->
+      <!--<div class="collapse" id="collapseExample">
+        <div>
+          <ul class="navbar-nav ps-3">
+            <li>
+              <a href="#" class="nav-link active px-3 sidebar-link" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                <span class="me-2"><i class="bi bi-calendar2-event"></i></span>
+                <span>About Us</span>
+               </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </li> -->
+    <li>
+        <a href="about.html" class="nav-link px-3 active">
+            <span class="me-2"><i class="bi bi-calendar2-event"></i></span>
+          <span>About Us</span>
+        </a>
+       </li>
+    <li class="">
+      <hr class="dropdown-divider"/>
+   </li>
+   <li>
+    <div class="text-muted small fw-bold text-uppercase px-3">
+      Add Your Own Touch
+    </div>
+  </li>
+   <li>
+    <a href="index2.html" class="nav-link px-3 active">
+      <span class="me-2"><i class="bi bi-laptop"></i></span>
+      <span>Customize</span>
+    </a>
+   </li>
+   <li class="">
+    <hr class="dropdown-divider"/>
+   </li>
+   <li>
+    <div class="text-muted small fw-bold text-uppercase px-3">
+      MORE THAN &nbsp;:) TO HELP
+    </div>
+  </li>
+   <li>
+    <a href="#" class="nav-link px-3 active">
+      <span class="me-2"><i class="bi bi-patch-question"></i></span>
+      <span>Help center</span>
+    </a>
+   </li>
+   <li class="">
+    <hr class="dropdown-divider"/>
+   </li>
+   <li>
+    <div class="text-muted small fw-bold text-uppercase px-3">Are You Done Studying ?</div>
+  </li>
+   <li>
+    <a href="index.html" class="nav-link px-3 active">
+      <i class="bi bi-patch-minus "style="color:white;"></i>&nbsp;<span style="color:white">Log Out&ensp;&ensp;&ensp;&ensp;</span>
+    
+    </a>
+   </li>
+   </ul>
+   </nav>
+    
+  </div>
+</div>
+<!-- offcanvas -->
+
+
+<main>
+<!-- let's give some styling to main so that offcanvas doesn't overlap with the text ! -->
+
+<div class="container-fluid" style="padding-left:2rem;padding-top:2rem;">
+  <div class="row">
+    <div class="col-md-12 fw-bold fs-3">
+    I Need Help With&nbsp; :
+    <br>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <br>
+        <div class="card  mb-3" style="max-width: 18rem;background-color: rgb(245, 233, 253);">
+          <!-- <div class="card-header">Header</div> -->
+          <div class="card-body">
+            <img src="https://static.uacdn.net/production/_next/static/images/helpCenter/guideToUnacademy.svg">
+            <h5 class="card-title">My account</h5>
+            <p class="card-text">Discount Codes,Knowledge Hots and more</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <br>
+        <div class="card mb-3" style="max-width: 18rem;background-color: rgb(245, 233, 253);">
+        
+          <div class="card-body">
+            <img src="https://static.uacdn.net/production/_next/static/images/helpCenter/payments.svg">
+            <h5 class="card-title">Payments</h5>
+            <p class="card-text">EMI Related Queries</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <br>
+        <div class="card mb-3" style="max-width: 18rem;background-color: rgb(245, 233, 253)">
+         
+          <div class="card-body">
+            <img src="https://static.uacdn.net/production/_next/static/images/helpCenter/myCourses.svg">
+            <h5 class="card-title">Classes And Courses</h5>
+            <p class="card-text">Enroll For A new Course,etc.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <br>
+        <div class="card mb-3" style="max-width: 18rem;background-color:rgb(245, 233, 253)">
+         
+          <div class="card-body">
+            <img src="https://static.uacdn.net/production/_next/static/images/helpCenter/technicalIssues.svg">
+            <h5 class="card-title">Technical Difficulties</h5>
+            <p class="card-text">account Buffering,etc.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <br>
+        <div class="card mb-3" style="max-width: 18rem;background-color: rgb(245, 233, 253)">
+          
+          <div class="card-body">
+            <img src="https://static.uacdn.net/production/_next/static/images/helpCenter/testSeries.svg">
+            <h5 class="card-title">Our Exclusives</h5>
+            <p class="card-text">Info.Regarding Tests,etc.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <br>
+        <div class="card mb-3" style="max-width: 18rem;background-color: rgb(245, 233, 253)">
+         
+          <div class="card-body">
+            <img src="https://static.uacdn.net/production/_next/static/images/helpCenter/letsBegin.svg">
+            <h5 class="card-title">Let's Begin</h5>
+            <p class="card-text">Your Complete Guide To Our Courses</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container-fluid" style="padding-top:1rem;">
+  <div class="row" >
+    <hr class="dropdown-divider"/>
+    <div class="col-md-3"style="padding-left:2rem;" >
+      <!-- <hr class="dropdown-divider"/> -->
+      <br>
+      <br>
+      <h5 >Starting Your Preparation &ensp;:</h5>
+      <br>
+      <h6 >Call Us At</h5>
+        <i class="bi bi-telephone-fill"></i>&ensp;+91-8568092000
+        <br>
+        <br>
+        <h6>Email Us At</h6>
+        <i class="bi bi-envelope-fill"></i>&ensp;oneforall@gmail.com
+    </div>
+    <div class="col-md-9">
+      <!-- <hr class="dropdown-divider"/> -->
+      <br>
+      <br>
+      <iframe style="width:100%;height:100%;" class="img-fluid"src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13689.659115697534!2d75.8794613!3d30.9309782!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391a83e4e27fe88b%3A0x401e35676cedbae2!2sASWEBWORKS%20LLP%20%7C%20Best%20Web%20Development%20and%20Digital%20Marketing%20Company!5e0!3m2!1sen!2sin!4v1685390259752!5m2!1sen!2sin"  style="border-radius: 15px;height:300px;width:400px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12">
+      <hr class="dropdown-divider"/>
+      <br>
+      &ensp;&ensp;@All Rights Reserved&ensp;|&ensp;One For All 2023    </div>
+      <br>
+      <br>
+      <br>
+      <hr class="dropdown-divider" style="color:white;"/>
+  </div>
+</div>
+
+</main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script type="text/javascript"src="page.js"></script>
+</body>
+</html>

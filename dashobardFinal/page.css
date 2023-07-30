@@ -1,0 +1,41 @@
+:root{
+    --offcanvas-width:270px;
+    --topNavbarHeight:69px;
+}
+/* added to offcanvas */
+.sidebar-nav{
+  width:var(--offcanvas-width);
+}
+/* for the chevron icon to appear on the right ! */
+.sidebar-link{
+    display:flex;
+}
+.sidebar-link .right-icon{
+    display:inline-flex;
+}
+.col-md-12{
+    margin-top: 5rem;
+}
+.day{
+    font-size:small;
+}
+
+/* we want offcanvas to be visible on large screens ! */
+@media (min-width:1000px) {
+    /* offcanvas adds overflow to body elements */
+    body{
+        overflow: auto !important;
+    }
+   main{
+    
+    margin-left:var(--offcanvas-width);
+   }
+
+    .sidebar-nav{
+        /* making sure that its default action stops ! */
+        transform:none;
+        visibility: visible !important;
+        top:var(--topNavbarHeight);
+        height:calc(100%-var(var(--topNavbarHeight)));
+    }
+}
